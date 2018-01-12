@@ -1,0 +1,25 @@
+/*css code for the Currency Conversion Project */
+/* Johan Steven Ospina Arroyave */
+
+html{
+    background: radial-gradient(#CEF6F5 , #A9E2F3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto', sans-serif; /*assign a font family */
+    min-height:100%;      /* given height */
+    display:flex;
+    justify-content:center;     /* center the content */
+    align-items:center;   /*aligning to the center*/
+}
+
+.container{background:#fff; max-width:500px; padding:20px;}
+
+h1{font-size:32px; text-align:center; text-transform:uppercase; color:#2E9AFE;font-weight:normal; letter-spacing:-1px;}   /* create style for the title of the project */
+p{font-size: 20px; color:#151F1F; text-align:center;}    /* style that is used in the description of the project */
+h2{font-size: 10px; text-align: center;color:black;font-weight:normal; letter-spacing:1px}    /* style used on my name */
+
+input[type="number"]{padding:5px; border-radius:3px; border:1px solid #999; width:90%; margin-bottom:10px; font-size:16px;}
+input[type="number"]:focus{border-color:#151F1F;}     /*style used in the number boxes */
+
+.conversionWrapper{width:70%; margin:0 auto;}
+
+.convertButton{text-align:center; margin:10px auto 0; text-transform:uppercase; color:white; background-color:#2E9AFE; border:1px solid #614385; border-radius:3px; padding:5px 20px; cursor:pointer; transition: 0.3s background ease-in; display:block;}  /* style assigned to the convert button and the text inside of it */
+.convertButton:hover{background-color:#2E9AFE; border-color:#58D3F7;}   /* interaction of the convert button so it fades into another color once it's pressed */

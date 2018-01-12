@@ -1,53 +1,31 @@
-<!DOCTYPE html>
+<!-- Johan Steven OSpina Arroyave -->
+<!-- DAT405 Creative Coding  -->
+<!-- Data Visualization Assignment -->
+<!DOCTYPE html>     <!-- creating html code  -->
 <html lang="en">
-  <head>
-    <title>Currency Converter</title>
-    <style>
-    #box
-    {
-      width: 300px;
-      height: 150px;
-      margin: 0px auto;
-      border: 2px solid black;
-    }
-    h2{
-        text-align: center;
-    }
-    table{
-      margin: 0px auto;
-    }
-   </style>
-  </head>
-  <body>
-    <div id="box">
-      <h2>Currency Converter</h2>
-      <table>
-        <tr>
-          <td><input id="fromAmount" type="text" size="15"/></td>
-          <td>
-            <select id="from">
-                <option value="EUR">Euro (EUR)</option>
-                <option value="USD">United States Dollar (USD)</option>
-                <option value="GBP" selected>Great Britain Pound (GBP)</option>
-                <option value="AUD">Australian Dollar (AUD)</option>
-                <option value="JPY">Japanese Yen (JPY)</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td><input id="toAmount" type="text" size="15" disabled/></td>
-          <td>
-            <select id="to">
-                <option value="EUR" selected>Euro (EUR)</option>
-                <option value="USD">United States Dollar (USD)</option>
-                <option value="GBP">Great Britain Pound (GBP)</option>
-                <option value="AUD">Australian Dollar (AUD)</option>
-                <option value="JPY">Japanese Yen (JPY)</option>
-            </select>
-          </td>
-        </tr>
-
-      </table>
-
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>   <!-- assigning the title viewed in the page  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />  <!-- referencing the font that I used for the project  -->
+    <link rel="stylesheet" href="style/main.css" />  <!--  linking css stylesheet code with the styles I created for the website to the html -->
+</head>
+<body>
+    <div class="container">       <!-- assigning a new container which will hold the conversion tool  -->
+        <h1>Currency Converter </h1>  <!-- creating the main header  -->
+        <h2>Johan Steven Ospina Arroyave<h2>  <!-- creating a secondary header which will hold my name under the main title of the project  -->
+        <p>Enter the amount of Euros you would like to convert</p>  <!-- instructions for the script -->
+        <div class="conversionWrapper">     <!-- creating a wrapper for the input values one wishes to convert  -->
+            <div class="inputWrapper">    <!-- creating a wrapper for the output result -->
+                <span>&euro;</span>
+                <input type="number" name="euro" class="euro" placeholder="0.00" step="0.01" />
+            </div><!-- .inputWrapper -->
+            <div class="inputWrapper">
+                <span>&pound;</span>
+                <input type="number" name="pound" class="pound" placeholder="0.00" step="0.01" disabled />
+            </div><!-- .inputWrapper -->
+            <button class="convertButton">Convert</button>
+        </div><!-- .conversionWrapper -->
+    </div><!-- .container -->
+    <script src="script/main.js"></script>  <!-- linking the javascript sketch file to the html file  -->
+</body>
 </html>
